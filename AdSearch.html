@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Advanced Search</title>
+    </head>
+    <body>
+        <style>
+        a {position: absolute;
+        right: 0px;}
+        form {left: 0px;
+        padding: 10px 0}
+        #inp1 {background-color: blue;
+            color: white;}
+        </style>
+        <a href="https://ide-320567f848184db192be0ad328982228-8080.cs50.ws/search.html">Search</a>
+        <form action="https://www.google.com/search?hl=en&">
+            <div>
+                Find Pages With All These Words
+                <input type="text" name="as_q">
+            </div>
+            <div>
+                Find Pages With This Exact World Or Phrase
+                <input type="text" name="as_epq">
+            </div>
+            <div>
+                Find Pages With Any Of These Words
+                <input type="text" name="as_oq">
+            </div>
+            <div>
+                Find Pages With None Of These Words
+                <input type="text" name="as_eq">
+            </div>
+            <input id="inp1" type="submit" value="Advanced Google Search">
+        </form>
+    </body>
+</html>
