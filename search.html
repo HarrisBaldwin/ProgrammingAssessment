@@ -5,20 +5,68 @@
     </head>
     <body>
         <style>
+        @keyframes fade {
+            0% {
+                Opacity: 100%;
+            }
+            50% {
+                Opacity: 50%;
+            }
+            100% {
+                opacity: 0%;
+            }
+        }
+
         form {text-align: center;
-        padding: 70px 0}
-        a {position: absolute;
-        right: 0px;}
-        #inp1 {border-radius: 25px;
+        padding: 150px 0;
+        position: middle;
+        }
+
+        h1 {color: blue;
+        font-family: "sofia","sans-serif";
+        font-size:50px;
+        position: middle;
+        }
+
+        ul {position: absolute;
+        right: 0px;
+        list-style-type: none;}
+
+        li {display: inline;
+        padding: 8px;
+        }
+
+        a {font-size:20px;}
+
+        #inp1 {
+        border-radius: 25px;
         border: 2px solid #000000;
-        padding: 20px;}
+        padding: 20px;
+        width: 400px;
+        }
+
+        #inp2 {border-radius: 25px;
+        border:2px solid #000000;
+        padding: 20px;
+        width: 250px;
+        }
+
+        div {
+        background-image: url('https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/Flag_of_the_United_Kingdom.svg/1200px-Flag_of_the_United_Kingdom.svg.png');
+        background-position: center;}
+
         </style>
-        <a href="https://ide-320567f848184db192be0ad328982228-8080.cs50.ws/image.html">Images</a>
-        <a href="https://ide-320567f848184db192be0ad328982228-8080.cs50.ws/AdSearch.html">Advanced Search</a>
+        <div>
+        <ul>
+            <li><a href="https://ide-320567f848184db192be0ad328982228-8080.cs50.ws/image.html">Images</a></li>
+            <li><a href="https://ide-320567f848184db192be0ad328982228-8080.cs50.ws/AdSearch.html">Advanced Search</a></li>
+        </ul>
         <form action="https://google.com/search">
+            <h1>UK Search</h1>
             <input id="inp1" type="text" name="q">
             <br>
-            <input type="submit" value="Google Search">
+            <input id="inp2" type="submit" value="Search">
         </form>
+        </div>
     </body>
 </html>

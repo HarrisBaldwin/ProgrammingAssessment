@@ -7,30 +7,58 @@
         <style>
         a {position: absolute;
         right: 0px;}
-        form {left: 0px;
-        padding: 10px 0}
-        #inp1 {background-color: blue;
-            color: white;}
+
+        h1 {color:blue;
+        font-size:50px;
+        }
+
+        form {left: 0px;}
+
+        div {padding: 5px;
+        font-size: 20px;
+        }
+
+        tr {font-size:20px;
+        }
+
+        #inp1 {margin: 5px;
+        width:200px;
+        height:35px;
+        }
+
+        #inp2 {background-color: blue;
+        color: white;
+        font-size: 15px;
+        width: 207px;
+        height:35px;
+        margin: 5px;
+        }
         </style>
         <a href="https://ide-320567f848184db192be0ad328982228-8080.cs50.ws/search.html">Search</a>
+        <h1>Advanced Search</h1>
         <form action="https://www.google.com/search?hl=en&">
-            <div>
-                Find Pages With All These Words
-                <input type="text" name="as_q">
-            </div>
-            <div>
-                Find Pages With This Exact World Or Phrase
-                <input type="text" name="as_epq">
-            </div>
-            <div>
-                Find Pages With Any Of These Words
-                <input type="text" name="as_oq">
-            </div>
-            <div>
-                Find Pages With None Of These Words
-                <input type="text" name="as_eq">
-            </div>
-            <input id="inp1" type="submit" value="Advanced Google Search">
+            <table>
+                <tr>
+                    <td>Find Pages With All These Words</td>
+                    <td><input id="inp1" type="text" name="as_q"></td>
+                </tr>
+                <tr>
+                    <td>Find Pages With This Exact World Or Phrase</td>
+                    <td><input id="inp1" type="text" name="as_epq"></td>
+                </tr>
+                <tr>
+                    <td>Find Pages With Any Of These Words</td>
+                    <td><input id="inp1" type="text" name="as_oq"></td>
+                </tr>
+                <tr>
+                    <td>Find Pages With None Of These Words</td>
+                    <td><input id="inp1" type="text" name="as_eq"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input id="inp2" type="submit" value="Advanced Search"></td>
+                </tr>
+            </table>
         </form>
     </body>
 </html>
